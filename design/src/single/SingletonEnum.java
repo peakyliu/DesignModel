@@ -23,5 +23,14 @@ public enum SingletonEnum {
         System.out.println(firstSingleton.getObjName());
         System.out.println(secondSingleton.getObjName());
 
+        //反射获取实例模式
+        try {
+            SingletonEnum[] enums = SingletonEnum.class.getEnumConstants();
+            for (SingletonEnum anEnum : enums) {
+                System.out.println(anEnum.getObjName());
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
