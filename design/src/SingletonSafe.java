@@ -5,7 +5,7 @@ public class SingletonSafe {
     private SingletonSafe() {
     }
 
-    public static SingletonSafe getSingletonSafe(){
+    public static SingletonSafe getUniqueInstance(){
         if (uniqueInstane == null) {
             uniqueInstane = new SingletonSafe();
         }
