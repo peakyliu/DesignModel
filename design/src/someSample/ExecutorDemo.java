@@ -17,6 +17,7 @@ public class ExecutorDemo {
             return "abc";
         });
 
+        //获取返回值
         String s = submit.get();
         System.out.println(s);
         executorService.shutdown();
