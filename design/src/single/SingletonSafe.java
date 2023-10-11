@@ -2,7 +2,7 @@ package single;
 
 //单例模式，懒汉式
 public class SingletonSafe {
-    private static SingletonSafe uniqueInstane;
+    private volatile static SingletonSafe uniqueInstane;
 
     private SingletonSafe() {
     }
