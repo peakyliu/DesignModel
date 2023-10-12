@@ -12,6 +12,7 @@ public class Singleton {
     public static Singleton getUniqueInstance() {
         if (uniqueInstance == null) {
             synchronized (Singleton.class) {
+                //这里的双重校验判断不能去掉，为了防止重复创建对象，去掉的话相当于锁只加在一行代码之上（等于没加）
                 if (uniqueInstance == null) {
                     uniqueInstance = new Singleton();
                 }
