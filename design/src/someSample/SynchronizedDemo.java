@@ -1,6 +1,9 @@
 package someSample;
 
 import java.security.PublicKey;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class SynchronizedDemo {
     //由于这里synchronized是可重入锁，方法1已经获取了对象锁，所以再次获取方法2的时候不会产生死锁的问题
