@@ -33,7 +33,7 @@ public class CountDownLatchExample {
 
     public static void test(int threadNum) throws InterruptedException {
         Thread.sleep(1000);
-        System.out.println("threadNum" + threadNum);
+        System.out.println("threadNum" + threadNum + "获得了");
         Thread.sleep(1000);
     }
 }
