@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {
-    //创建请求数量
+    //创建请求数量，初始为500
     private static final int threadCount = 500;
 
     public static void main(String[] args) {
