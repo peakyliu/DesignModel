@@ -1,6 +1,8 @@
 package someSample;
 
 import java.sql.SQLOutput;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,7 +25,6 @@ public class StreamDemo {
 
         List<String> addResult = strings.stream().map(s -> s + 22).collect(Collectors.toList());
         System.out.println(addResult);
-
         strings.stream().sorted().forEach(System.out::println);
 
         List<String> filterResult = strings.stream().filter(s -> "abc".equals(s)).collect(Collectors.toList());
